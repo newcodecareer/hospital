@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: normal 14px/25px '微软雅黑';
+}
+
+.content h2 {
+    border-left: 8px solid #00978E;
+    padding-left: 6px;
+}
+/* header {
+
+} */
+
+header .headerTop {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+}
+
+header .headerTop .logo {
+    width: 192px;
+    height: 63px; 
+    float: left;
+    padding-top: 39px; 
+}
+
+header .headerTop .logo h1 {
+    width: 192px;
+    height: 63px;
+    /* background-color: aqua; */
+    text-align: center;
+    color: #00978E;
+    font-size: 48px;
+    /* line-height: 63px; */
+}
+/* h1 浏览器默认带margin */
+
+header .headerTop .tool {
+    float: right;
+    width: 266px;
+    height: 67px;
+    padding-top: 35px;
+}
+
+header .headerTop .tool .r1{
+    margin-bottom: 10px;
+    width: 266px;
+    height: 26px;
+}
+
+header .headerTop .tool .r1 .tel {
+    width: 32px;
+    height: 25px;
+    float: left;       
+}
+        /* 不加float这行 位置颠倒 受296行影响 296line已改*/
+
+header .headerTop .tool .r1 .telnumber {
+    width: 158px;
+    height: 26px;
+    font-size: 20px;
+    color: #00978E;
+    display: inline-block;
+    text-align: center;
+}
+/* span of telnumber on the botttom, will solve it later */
+
+header .headerTop .tool .r1 .icon {
+    width: 24px;
+    height: 24px;
+}
+
+header .headerTop .tool .r1 .english_icon {
+    margin-left: 11px;
+}
+
+header .headerTop .tool .r2 {
+    width: 264px;
+    height: 28px;
+    border: 1px solid rgba(202,202,202,0.60);
+    border-radius: 6px;
+}
+
+header .headerTop .tool .r2 input {
+    width: 95px;
+    height: 21px;
+    float: left;
+    padding-left: 19px;
+    padding-top: 4px;
+    border: none;
+    outline: none;
+}
+
+header .headerTop .tool .r2 button {
+    width: 20px;
+    height: 20px;
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    right: 2px;
+}
+
+header nav.main-nav {
+    height: 60px;
+    margin-top: 29px;
+    background-color: #00978E;
+}
+
+header nav.main-nav ul {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+header nav.main-nav ul li {
+    float: left;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+header nav.main-nav ul li a{
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+header nav.main-nav ul li a:hover {
+    background-color: orange;
+}
+
+header nav.main-nav ul a.cur {
+    background: #015E58;
+}
+
+section.banner {
+    width: 100%;
+    position: relative;
+}
+
+section.banner img.center {
+    width: 100%;    
+}
+
+section.banner div {
+    width: 1200px;
+    height: 300px;
+    /* background-color: rgb(98, 138, 30); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+
+section.banner div h1 {
+    width: 480px;
+    height: 79px;
+    /* background-color: #fff; */
+    font-size: 60px;
+    font-weight: normal;
+    color: #015E58;
+    position: absolute;
+    bottom: 50%;
+    left: 92px;
+}
+
+section.banner div .arrow {
+    width: 56px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+}
+
+section.banner div .leftArrow {
+    left: 0;
+}
+
+section.banner div .rightArrow {
+    right: 0; 
+}
+
+section.banner ol {
+    width: 120px;
+    height: 12px;
+    /* background-color: orange; */
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 20px;
+}
+
+section.banner ol li {
+    float: left;
+    width: 20px;
+    height: 12px;
+    background: #FFFFFF;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+section.banner ol li:nth-child(4) {
+    margin-right: 0;
+}
+
+section.banner ol li.current {
+    width: 30px;
+    background: #00978E;
+}
+
+section.content {
+    padding-top: 71px;
+}
+
+section.content .usefull-links {
+    /* background-color: rgb(218, 171, 83); */
+    width: 906px;
+    height: 148px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* padding-top: 71px; */
+}
+
+section.content .usefull-links ul li {
+    float: left;
+    width: 106px;
+    /* height: 148px; */
+    margin-right: 54px;
+    /* text-align: center; */
+}
+
+section.content .usefull-links ul li:last-child {
+    margin-right: 0;
+}
+
+section.content .usefull-links ul li span {
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.content .newsAndNotices {
+    width: 1200px;
+    height: 376px;
+    /* background-color: blue; */
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 56px;
+}
+
+.content .newsAndNotices .news {
+    /* background-color: rgb(40, 126, 147); */
+    width: 870px;
+    height: 376px;
+    float: left;
+}
+
+.content .newsAndNotices .news h2 {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 27px;
+}
+
+.content .newsAndNotices .news .picBox {
+    width: 422px;
+    height: 328px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+
+.content .newsAndNotices .news ul {
+    float: left;
+    width: 402px;
+    height: 328px;
+}
+
+.content .newsAndNotices .news ul li a, .date{
+    font-size: 14px;
+    color: #000000;
+    line-height: 40px;
+    float: left;
+}
+
+.content .newsAndNotices .news ul li span {
+    float: right;
+}
+
+.content .newsAndNotices .news ul li a.spec {
+    color: #00978E;
+}
+
+.content .newsAndNotices .news .picBox .info {
+    width: 422px;
+    height: 40px;
+    background: rgba(8,8,8,0.40);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+.content .newsAndNotices .notices {
+    /* background-color: red; */
+    width: 330px;
+    height: 376px;
+    float: right;
+}
+
+.content .newsAndNotices .notices h2 {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.content .newsAndNotices .notices ol li {
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+/* .content .newsAndNotices .notices ol li:last-child {
+    margin-bottom: 0;
+} */
+
+.content .newsAndNotices .notices ol li .number {
+    float: left;
+    width: 53px;
+    height: 57px;
+    background: #00978E;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 57px;
+    margin-right: 16px;
+    /* margin-bottom: 14px; 在li 和.number 下各写了一个margin,导致.number间距太大，看不到05 */
+}
+
+.content .newsAndNotices .notices ol li dl a {
+    font-size: 14px;
+    color: #000000;
+}
+
+
+.content aside {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+
+.content .depInfo {
+    height: 437px;
+    background: #FAFAFA;
+    margin-top: 8px;
+}
+
+.content .depInfo .center {
+    width: 1200px;
+    height: 437px;
+    margin: 0 auto;
+    margin-top: 8px;
+    /* background-color: rgba(255, 166, 0, 0.44); */
+    padding-top: 36px;
+    position: relative;
+}
+
+.content .depInfo .center ul.depContent {
+    overflow: hidden;
+    width: 1200px;
+    height: 362px;
+    margin: 0 auto;
+    /* background-color: blue; */
+    padding-top: 19px;
+}
+
+.content .depInfo .center ul li.everyDep {
+    float: left;
+    width: 280px;
+    height: 314px;
+    /* text-align: center; */
+    margin-left: 20px;
+}
+
+.content .depInfo .center h2 {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.content .depInfo .center a.more {
+    position: absolute;
+    right: 0;
+    top: 39px;
+    font-size: 14px;
+    color: #999999;
+    width: 77px;
+    /* height: 18px; */
+}
+
+.content .depInfo .center ul li.everyDep h3 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.content .depInfo .center ul li.everyDep h3::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+    position: absolute;
+    left: 66px;
+    top: 10px;
+}
+
+.content .depInfo .center ul li.everyDep h3::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #00978E;
+    position: absolute;
+    left: 175px;
+    top: 10px;
+}
+
+.content .depInfo .center ul li.everyDep ul li {
+    width: 119px;
+    height: 34px;
+    float: left;
+    background: #FFFFFF;
+    border: 1px solid #AAA9A9;
+    border-radius: 6px;
+    margin-right: 21px;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 8px;
+}
+
+.content .depInfo .center ul li.everyDep ul li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.content .depInfo .center ul li.everyDep ul li a {
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+}
+
+
+.content .expInfo {
+    width: 1200px;
+    height: 598px;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+    position: relative;
+}
+
+.content .expInfo h2 {
+    width: 64px;
+    height: 21px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+.content .expInfo a.more {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    font-size: 14px;
+    color: #999999;
+    width: 77px;
+    /* height: 18px; */
+}
+
+.content .expInfo ul {
+    width: 1200px;
+    height: 477px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+
+.content .expInfo ul li {
+    float: left;
+    width: 400px;
+    height: 190px;
+    margin-bottom: 50px;
+}
+
+.content .expInfo ul li .expPicBox {
+    width: 152px;
+    height: 190px;
+    float: left;
+    padding-right: 12px;
+    padding-left: 14px;
+}
+
+.content .expInfo  ul li .wordbox {
+    font-size: 14px;
+    color: #000000;
+    /* text-align: right; */
+    line-height: 27px;
+    /* float: left; */
+}
+
+
+.footer {
+    height: 395px;
+    background: #FAFAFA;
+}
+
+.footer .friendLinks {
+    height: 97px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 67px;
+}
+
+.footer .friendLinks h2 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+    /* padding-top: 67px; */
+}
+
+.footer .friendLinks ul {
+    overflow: hidden;
+}
+
+.footer .friendLinks li {
+    width: 64px;
+    height: 21px;
+    float: left;
+    font-size: 16px;
+    color: #000000;
+    margin: 20px 50px;
+}
+
+.footer address {
+    width: 1200px;
+    height: 112px;
+    margin: 0 auto;
+}
+
+
+.footer address h2 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer address ul {
+    overflow: hidden;
+    width: 750px;
+}
+
+.footer address li {
+    width: 204px;
+    height: 24px;
+    float: left;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 20px;
+    margin-right: 33px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.footer address li a {
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
+}
